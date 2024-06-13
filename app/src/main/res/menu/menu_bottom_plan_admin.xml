@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/Menu_lunes_a"
+        android:title="Lunes"
+        android:icon="@drawable/ic_lunes"/>
+    <item
+        android:id="@+id/Menu_martes_a"
+        android:title="Martes"
+        android:icon="@drawable/ic_martes"/>
+    <item
+        android:id="@+id/Menu_miercoles_a"
+        android:title="Miercoles"
+        android:icon="@drawable/ic_miercoles"/>
+    <item
+        android:id="@+id/Menu_jueves_a"
+        android:title="Jueves"
+        android:icon="@drawable/ic_jueves"/>
+    <item
+        android:id="@+id/Menu_viernes_a"
+        android:title="Viernes"
+        android:icon="@drawable/ic_viernes"/>
+    <item
+        android:id="@+id/Menu_sabado_a"
+        android:title="Sabado"
+        android:icon="@drawable/ic_sabado"/>
+    <item
+        android:id="@+id/Menu_domingo_a"
+        android:title="Domingo"
+        android:icon="@drawable/ic_domingo"/>
+</menu>

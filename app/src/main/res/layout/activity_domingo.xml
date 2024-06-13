@@ -1,0 +1,265 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Cliente.Domingo">
+
+    <!--Domingo-->
+    <RelativeLayout
+        android:id="@+id/toolbarEditarPerfil"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/m_toolbar_height">
+
+        <ImageButton
+            android:id="@+id/Dia_anterior"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:background="@android:color/transparent"
+            android:padding="10dp"
+            android:src="@drawable/ic_regresar" />
+
+        <ImageButton
+            android:id="@+id/Dia_siguiente"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_centerVertical="true"
+            android:background="@android:color/transparent"
+            android:padding="10dp"
+            android:src="@drawable/ic_siguiente" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="Domingo" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_alignParentBottom="true"
+            android:background="#ccc" />
+
+    </RelativeLayout>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/toolbarEditarPerfil">
+        <!---->
+        <RelativeLayout
+            android:id="@+id/Dia_form"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@id/toolbarEditarPerfil">
+
+            <!--1ra comida titulo-->
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/lunest1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:boxCornerRadiusBottomEnd="8dp"
+                app:boxCornerRadiusBottomStart="8dp"
+                app:boxCornerRadiusTopEnd="8dp"
+                app:boxCornerRadiusTopStart="8dp"
+                >
+
+                <EditText
+                    android:id="@+id/Et_a_lunest1"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="Titulo 1ra comida" />
+
+            </com.google.android.material.textfield.TextInputLayout>
+            <!--1ra comida descripcion-->
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/lunesd1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/lunest1"
+                app:boxCornerRadiusBottomEnd="8dp"
+                app:boxCornerRadiusBottomStart="8dp"
+                app:boxCornerRadiusTopEnd="8dp"
+                app:boxCornerRadiusTopStart="8dp"
+                app:layout_constraintTop_toBottomOf="@+id/lunest1">
+
+                <EditText
+                    android:id="@+id/Et_a_lunesd1"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="Descripcion 1ra comida" />
+
+            </com.google.android.material.textfield.TextInputLayout>
+            <!--2da comida titulo-->
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/lunest2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/lunesd1"
+                app:boxCornerRadiusBottomEnd="8dp"
+                app:boxCornerRadiusBottomStart="8dp"
+                app:boxCornerRadiusTopEnd="8dp"
+                app:boxCornerRadiusTopStart="8dp"
+                app:layout_constraintTop_toBottomOf="@+id/lunesd1">
+
+                <EditText
+                    android:id="@+id/Et_a_lunest2"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="Titulo 2da comida" />
+
+            </com.google.android.material.textfield.TextInputLayout>
+            <!--2da comida descripcion-->
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/lunesd2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/lunest2"
+                app:boxCornerRadiusBottomEnd="8dp"
+                app:boxCornerRadiusBottomStart="8dp"
+                app:boxCornerRadiusTopEnd="8dp"
+                app:boxCornerRadiusTopStart="8dp"
+                app:layout_constraintTop_toBottomOf="@+id/lunest2">
+
+                <EditText
+                    android:id="@+id/Et_a_lunesd2"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="Descripcion 2da comida" />
+
+            </com.google.android.material.textfield.TextInputLayout>
+            <!--3ra comida titulo-->
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/lunest3"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/lunesd2"
+                app:boxCornerRadiusBottomEnd="8dp"
+                app:boxCornerRadiusBottomStart="8dp"
+                app:boxCornerRadiusTopEnd="8dp"
+                app:boxCornerRadiusTopStart="8dp"
+                app:layout_constraintTop_toBottomOf="@+id/lunesd2">
+
+                <EditText
+                    android:id="@+id/Et_a_lunest3"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="Titulo 3ra comida" />
+
+            </com.google.android.material.textfield.TextInputLayout>
+            <!--3ra comida descripcion-->
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/lunesd3"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/lunest3"
+                app:boxCornerRadiusBottomEnd="8dp"
+                app:boxCornerRadiusBottomStart="8dp"
+                app:boxCornerRadiusTopEnd="8dp"
+                app:boxCornerRadiusTopStart="8dp"
+                app:layout_constraintTop_toBottomOf="@+id/lunest3">
+
+                <EditText
+                    android:id="@+id/Et_a_lunesd3"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="Descripcion 3ra comida" />
+
+            </com.google.android.material.textfield.TextInputLayout>
+            <!--4ta comida titulo-->
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/lunest4"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/lunesd3"
+                app:boxCornerRadiusBottomEnd="8dp"
+                app:boxCornerRadiusBottomStart="8dp"
+                app:boxCornerRadiusTopEnd="8dp"
+                app:boxCornerRadiusTopStart="8dp"
+                app:layout_constraintTop_toBottomOf="@+id/lunesd3">
+
+                <EditText
+                    android:id="@+id/Et_a_lunest4"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="Titulo 4ta comida" />
+
+            </com.google.android.material.textfield.TextInputLayout>
+            <!--4ta comida descripcion-->
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/lunesd4"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/lunest4"
+                app:boxCornerRadiusBottomEnd="8dp"
+                app:boxCornerRadiusBottomStart="8dp"
+                app:boxCornerRadiusTopEnd="8dp"
+                app:boxCornerRadiusTopStart="8dp"
+                app:layout_constraintTop_toBottomOf="@+id/lunest4">
+
+                <EditText
+                    android:id="@+id/Et_a_lunesd4"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="Descripcion 4ta comida" />
+
+            </com.google.android.material.textfield.TextInputLayout>
+            <!--4ta comida titulo-->
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/lunest5"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/lunesd4"
+                app:boxCornerRadiusBottomEnd="8dp"
+                app:boxCornerRadiusBottomStart="8dp"
+                app:boxCornerRadiusTopEnd="8dp"
+                app:boxCornerRadiusTopStart="8dp"
+                app:layout_constraintTop_toBottomOf="@+id/lunesd4">
+
+                <EditText
+                    android:id="@+id/Et_a_lunest5"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="Titulo 5ta comida" />
+
+            </com.google.android.material.textfield.TextInputLayout>
+            <!--4ta comida descripcion-->
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/lunesd5"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/lunest5"
+                app:boxCornerRadiusBottomEnd="8dp"
+                app:boxCornerRadiusBottomStart="8dp"
+                app:boxCornerRadiusTopEnd="8dp"
+                app:boxCornerRadiusTopStart="8dp"
+                app:layout_constraintTop_toBottomOf="@+id/lunest5">
+
+                <EditText
+                    android:id="@+id/Et_a_lunesd5"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="Descripcion 5ta comida" />
+
+            </com.google.android.material.textfield.TextInputLayout>
+
+
+            <ImageButton
+                android:id="@+id/btn_datos"
+                android:layout_width="54dp"
+                android:layout_height="51dp"
+                android:layout_marginTop="12dp"
+                android:layout_below="@id/lunesd5"
+                android:padding="10dp"
+                android:layout_alignParentEnd="true"
+                android:src="@drawable/ic_cerrar_sesion"
+                />
+
+        </RelativeLayout>
+    </ScrollView>
+
+</RelativeLayout>

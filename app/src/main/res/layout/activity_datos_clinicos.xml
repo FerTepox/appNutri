@@ -1,0 +1,212 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".datosClinicos">
+
+    <TextView
+        android:id="@+id/clienteEMetabolicaLabel"
+        android:layout_width="160dp"
+        android:layout_height="30dp"
+        android:text="Edad metabolica: "
+        android:textSize="20sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.84"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/clienteGVisceralLabel" />
+
+    <com.google.android.material.textfield.TextInputEditText
+        android:id="@+id/clienteEMetabolica"
+        android:layout_width="150dp"
+        android:layout_height="47dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.808"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/clienteEMetabolicaLabel" />
+
+    <TextView
+        android:id="@+id/clienteGVisceralLabel"
+        android:layout_width="160dp"
+        android:layout_height="30dp"
+        android:text="Grasa visceral: "
+        android:textSize="20sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.127"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/clienteMusculo" />
+
+    <com.google.android.material.textfield.TextInputEditText
+        android:id="@+id/clienteGViscelar"
+        android:layout_width="150dp"
+        android:layout_height="47dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.122"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/clienteGVisceralLabel" />
+
+    <TextView
+        android:id="@+id/clienteHuesosLabel"
+        android:layout_width="128dp"
+        android:layout_height="30dp"
+        android:text="Huesos kg: "
+        android:textSize="20sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.745"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/clienteMusculoLabel" />
+
+    <com.google.android.material.textfield.TextInputEditText
+        android:id="@+id/clienteHuesos"
+        android:layout_width="150dp"
+        android:layout_height="47dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.808"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/clienteHuesosLabel" />
+
+    <TextView
+        android:id="@+id/clienteMusculoLabel"
+        android:layout_width="128dp"
+        android:layout_height="30dp"
+        android:text="Musculo kg: "
+        android:textSize="20sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.113"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/clienteGrasa" />
+
+    <com.google.android.material.textfield.TextInputEditText
+        android:id="@+id/clienteMusculo"
+        android:layout_width="150dp"
+        android:layout_height="47dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.122"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/clienteMusculoLabel" />
+
+    <TextView
+        android:id="@+id/clienteAguaLabel"
+        android:layout_width="83dp"
+        android:layout_height="30dp"
+        android:text="% Agua: "
+        android:textSize="20sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.643"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/clienteEdad" />
+
+    <com.google.android.material.textfield.TextInputEditText
+        android:id="@+id/clienteAgua"
+        android:layout_width="150dp"
+        android:layout_height="47dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.367"
+        app:layout_constraintStart_toEndOf="@+id/clienteGrasa"
+        app:layout_constraintTop_toBottomOf="@+id/clienteAguaLabel" />
+
+    <TextView
+        android:id="@+id/clienteGrasaLabel"
+        android:layout_width="83dp"
+        android:layout_height="30dp"
+        android:text="% Grasa: "
+        android:textSize="20sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.097"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/clientePeso" />
+
+    <com.google.android.material.textfield.TextInputEditText
+        android:id="@+id/clienteGrasa"
+        android:layout_width="150dp"
+        android:layout_height="47dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.122"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/clienteGrasaLabel" />
+
+    <TextView
+        android:id="@+id/clienteX"
+        android:layout_width="197dp"
+        android:layout_height="51dp"
+        android:layout_marginTop="16dp"
+        android:text="Cliente X..."
+        android:textSize="34sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.238"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/clienteNombreLabel"
+        android:layout_width="83dp"
+        android:layout_height="30dp"
+        android:layout_marginTop="28dp"
+        android:text="Nombre: "
+        android:textSize="20sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.097"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/clienteX" />
+
+    <com.google.android.material.textfield.TextInputEditText
+        android:id="@+id/clienteNombre"
+        android:layout_width="347dp"
+        android:layout_height="47dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/clienteNombreLabel" />
+
+    <TextView
+        android:id="@+id/clienteEdadLabel"
+        android:layout_width="83dp"
+        android:layout_height="30dp"
+        android:text="Edad: "
+        android:textSize="20sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.097"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/clienteNombre" />
+
+    <com.google.android.material.textfield.TextInputEditText
+        android:id="@+id/clienteEdad"
+        android:layout_width="150dp"
+        android:layout_height="47dp"
+        app:layout_constraintEnd_toStartOf="@+id/clientePeso"
+        app:layout_constraintHorizontal_bias="0.524"
+        app:layout_constraintStart_toStartOf="parent"
+        tools:layout_editor_absoluteY="201dp" />
+
+    <TextView
+        android:id="@+id/clientePesoLabel"
+        android:layout_width="83dp"
+        android:layout_height="30dp"
+        android:text="Peso: "
+        android:textSize="20sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.45"
+        app:layout_constraintStart_toEndOf="@+id/clienteEdadLabel"
+        app:layout_constraintTop_toBottomOf="@+id/clienteNombre" />
+
+    <com.google.android.material.textfield.TextInputEditText
+        android:id="@+id/clientePeso"
+        android:layout_width="150dp"
+        android:layout_height="46dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.808"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/clientePesoLabel" />
+
+    <Button
+        android:id="@+id/btn_guardar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Guardar"
+        android:textSize="34sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/clienteGViscelar" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
